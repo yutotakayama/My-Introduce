@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Contact</title>
+  <link rel="stylesheet" href="css/contact.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <!-- ホームボタン -->
+      <div class="home">
+        <span class="material-icons" id="home"><a href="./index.html">home</a></span>
+      </div>
+      <!-- pcのメニュー -->
+      <div class="pc-menu">
+        <nav>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./works.html">Works</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- phoneのメニューボタン -->
+      <div class="phone-menu">
+        <span class="material-icons" id="open">menu</span>
+      </div>
+    </header>
+
+    <main>
+      <div id="contact">
+        <h1>Contact</h1>
+        <p>ご連絡ください</p>
+      </div>
+
+      <h1 id="account">MY ACCOUNT</h1>
+      <div id="sns">
+        <div id="twitter">
+          <a href="https://twitter.com/taka_yama46" target="_blank"><img src="picture/twitter.png" alt="Twitterのアイコン"></a>
+          <p>Twitter</p>
+          <p>(@taka_yama46)</p>
+        </div>
+
+        <div id="instagram">
+          <a href="https://instagram.com/yuto__takayama" target="_blank"><img src="picture/instagram.png" alt="Instagramのアイコン"></a>
+          <p>Instagram</p>
+          <p>(yuto__takayama)</p>
+        </div>
+
+        <div id="g-mail">
+          <img src="picture/gmail.png" alt="G-mailのアイコン">
+          <p>Mail</p>
+          <p>(highmonutain392@gmail.com)</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="copylight">© 2020 Welcome To My Introduce Site. All rights reserved.</div>
+    </footer>
+
+    <!-- phoneのメニュー -->
+    <div class="over-content">
+      <span class="material-icons" id="close">close</span>
+      <nav>
+        <ul>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./works.html">Works</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <script src="js/contact.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+          window.sr = ScrollReveal({ reset: true ,mobile: true});
+          
+          sr.reveal( '.left', { origin: 'left' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
+          
+          sr.reveal( '.right', { origin: 'right' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
+    </script>
+
+  </div>
+</body>
+</html>

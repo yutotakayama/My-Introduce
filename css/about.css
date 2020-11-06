@@ -1,0 +1,538 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  color: rgb(255, 255, 255);
+  background: black;
+  display: flex;
+  padding: 0 16px;
+}
+
+.home {
+  font-size: 3.8rem;
+  margin: 0 auto;
+}
+
+.home:hover {
+  opacity: 0.5;
+}
+.phone-menu {
+  position: absolute;
+  top: -5px;
+  right: 16px;
+}
+
+.phone-menu #open {
+  font-size: 3.2rem;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.phone-menu #open.hide {
+  display: none;
+}
+
+.over-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.76);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
+}
+
+.over-content.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.over-content #close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 3.2rem;
+  cursor: pointer;
+}
+
+.over-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.over-content li {
+  margin-top: 24px;
+  font-size: 3rem;
+  font-family: 'arial';
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.over-content.show li{
+  opacity: 1;
+  transform: none;
+}
+
+.pc-menu {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#about {
+  color: black;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#about h1 {
+  font-size: 3rem;
+  font-family: 'arial';
+  margin: 50px auto;
+}
+
+#about p {
+  font-size: 1.5rem;
+  font-family: 'arial';
+  padding: 50px 0;
+}
+
+#who h1 {
+  text-align: center;
+  font-family: 'Garamond';
+  font-size: 5rem;
+  text-decoration: underline solid rgba(128, 128, 128, 0.171);
+}
+
+#person {
+  color: rgb(0, 0, 0);
+  background-image: url();
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#person h2 {
+  font-size: 3rem;
+  font-family: 游ゴシック;
+  margin: 50px auto;
+}
+
+#person p {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-family: 游ゴシック;
+  font-weight: bold;
+  color: rgba(128, 128, 128, 0.589);
+  text-align: left;
+}
+
+#hobby {
+  color: black;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 300px 0;
+}
+
+#hobby h1 {
+  font-family: 'Garamond';
+  font-size: 5rem;
+  text-decoration: underline solid rgba(128, 128, 128, 0.171);
+}
+
+#hobby h2 {
+  font-size: 3rem;
+  font-family: 游ゴシック;
+  font-weight: bold;
+  margin: 100px auto 0 auto;
+}
+
+#hobby h3 {
+  font-size: 2.5rem;
+  font-family: 游ゴシック;
+  margin: 0 auto;
+  padding: 100px 0 30px 0;
+}
+
+#tabletennis {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-family: 游ゴシック;
+  font-weight: bold;
+}
+
+#tabletennis p {
+  color: rgba(128, 128, 128, 0.589);
+  font-size: 1.5rem;
+}
+
+#tabletennis li {
+  font-size: 1.5rem;
+  list-style: none;
+  margin: 40px 0;
+  font-family: 游ゴシック;
+  font-weight: bold;
+  color: rgba(128, 128, 128, 0.589);
+}
+
+#grades {
+  font-family: 游ゴシック;
+  font-weight: bold;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#grades h4 {
+  font-size: 2rem;
+  margin: 50px 0 20px 0;
+}
+
+#grades li {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: rgba(128, 128, 128, 0.589);
+}
+
+#grades .best {
+  text-decoration: underline solid rgb(65, 141, 204);
+}
+
+#attention {
+  width: 60%;
+  height: auto;
+  margin: 40px auto;
+  text-align: left;
+}
+
+#game {
+  color: black;
+  width: 100%;
+  height: auto;
+}
+
+#game p {
+  width: 60%;
+  font-size: 1.5rem;
+  font-family: 游ゴシック;
+  font-weight: bold;
+  color: rgba(128, 128, 128, 0.589);
+  text-align: left;
+  margin: 0 auto;
+}
+
+#game h4 {
+  font-size: 2rem;
+  font-family: 游ゴシック;
+  font-weight: bold;
+  margin: 50px 0 20px 0;
+}
+
+#game li {
+  font-size: 1.5rem;
+  font-family: 游ゴシック;
+  font-weight: bold;
+  padding: 10px 0;
+  list-style: none;
+  color: rgba(128, 128, 128, 0.589);
+}
+
+#comic {
+  width: 100%;
+  height: auto;
+  margin: 50px auto;
+}
+
+#comic p {
+  width: 60%;
+  text-align: left;
+  font-size: 1.5rem;
+  font-family: 游ゴシック;
+  font-weight: bold;
+  color: rgba(128, 128, 128, 0.589);
+  margin: 0 auto;
+}
+
+#comic h4 {
+  font-size: 2rem;
+  font-family: 游ゴシック;
+  font-weight: bold;
+  margin: 50px 0 20px 0;
+}
+
+#comic ul {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#comic li {
+  font-size: 1.5rem;
+  font-family: 游ゴシック;
+  font-weight: bold;
+  padding: 10px 0;
+  list-style-type: none;
+  color: rgba(128, 128, 128, 0.589);
+}
+
+#skill h1 {
+  text-align: center;
+  font-family: 'Garamond';
+  font-size: 5rem;
+  text-decoration: underline solid rgba(128, 128, 128, 0.171);
+}
+
+#programming {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+#programming h2{
+  font-size: 3rem;
+  font-family: 游ゴシック;
+  margin: 0 auto;
+  padding: 50px 0 20px 0;
+}
+
+#programming p {
+  font-size: 1.5rem;
+  font-family: 游ゴシック;
+  padding: 30px 0;
+  font-weight: bold;
+  color: rgba(128, 128, 128, 0.589);
+}
+
+#programming h3 {
+  font-size: 2rem;
+  font-family: 游ゴシック;
+  padding: 30px 0;
+  font-weight: bold;
+  color: black;
+}
+
+#google {
+  border: 3px solid black;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 3px 3px;
+}
+
+#google img {
+  width: 20%;
+  height: auto;
+  margin-top: 20px;
+}
+
+#dotinstall {
+  border: 3px solid black;
+  width: 50%;
+  margin: 30px auto;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 3px 3px;
+}
+
+#dotinstall img {
+  width: 20%;
+  height: auto;
+  margin-top: 20px;
+}
+
+#language img {
+  width: 20%;
+  height: auto;
+  margin-top: 20px;
+}
+
+#html,
+#css,
+#javascript {
+  border: 3px solid black;
+  width: 50%;
+  margin: 30px auto;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 3px 3px;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  background-color: #999;
+  opacity: .8;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  font-size: 3rem;
+}
+.scroll-top:hover {
+  cursor: pointer;
+}
+
+
+/* フッター */
+footer {
+  background-color: gray;
+  color: white;
+  width: auto;
+  height: 40px;
+  text-align: center;
+}
+
+#copylight {
+  padding-top: 8px;
+}
+
+
+@media screen and (min-width: 560px) {
+  #home {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+  }
+  .pc-menu {
+    display: block;
+  }
+
+  .pc-menu ul {
+    display: flex;
+    margin: 15px;
+  }
+
+  .pc-menu li {
+    list-style: none;
+    padding-right: 90px;
+    font-size: 1.3rem;
+  }
+
+  .phone-menu {
+    display: none;
+  }
+
+  .over-content {
+    display: none;
+  }
+
+  #about {
+    padding: 200px 0;
+  }
+
+  #person p {
+    text-align: center;
+  }
+
+  #attention {
+    text-align: center;
+  }
+
+  #game p {
+    text-align: center;
+  }
+
+  #comic p {
+    text-align: center;
+  }
+
+  #study {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  #google {
+    width: 30%;
+    margin: 30px auto;
+  }
+  
+  #google img {
+    width: 30%;
+  }
+  
+  #dotinstall {
+    width: 30%;
+    margin: 30px auto;
+  }
+  
+  #dotinstall img {
+    width: 30%;
+  }
+
+  #language {
+    display: flex;
+  }
+  
+  #language img {
+    width: 30%;
+  }
+  
+  #html,
+  #css,
+  #javascript {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #about {
+    padding: 300px 0;
+  }
+
+  #person p {
+    width: 80%;
+  }
+
+  #comic p {
+    width: 80%;
+  }
+
+  #google {
+    width: 20%;
+  }
+  
+  #dotinstall {
+    width: 20%;
+  }
+
+  #language {
+    display: flex;
+  }
+
+}

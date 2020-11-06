@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Works</title>
+  <link rel="stylesheet" href="css/works.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <!-- ホームボタン -->
+      <div class="home">
+        <span class="material-icons" id="home"><a href="./index.html">home</a></span>
+      </div>
+      <!-- pcのメニュー -->
+      <div class="pc-menu">
+        <nav>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./works.html">Works</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- phoneのメニューボタン -->
+      <div class="phone-menu">
+        <span class="material-icons" id="open">menu</span>
+      </div>
+    </header>
+
+    <main>
+      <div id="works">
+        <h1>Works</h1>
+        <p>これまでに作った、私の作品です</p>
+      </div>
+
+      <div id="unfinished">
+        <p>Under Construction...</p>
+      </div>
+    </main>
+
+    <footer>
+      <div id="copylight">© 2020 Welcome To My Introduce Site. All rights reserved.</div>
+    </footer>
+
+    <!-- phoneのメニュー -->
+    <div class="over-content">
+      <span class="material-icons" id="close">close</span>
+      <nav>
+        <ul>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./works.html">Works</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <script src="js/works.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+          window.sr = ScrollReveal({ reset: true ,mobile: true});
+          
+          sr.reveal( '.left', { origin: 'left' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
+          
+          sr.reveal( '.right', { origin: 'right' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
+    </script>
+
+  </div>
+</body>
+</html>
