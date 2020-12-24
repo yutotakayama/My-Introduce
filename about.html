@@ -12,7 +12,7 @@
     <header>
       <!-- ホームボタン -->
       <div class="home">
-        <span class="material-icons" id="home"><a href="./index.html">home</a></span>
+        <span class="material-icons" id="home"><a href="./home.html">home</a></span>
       </div>
       <!-- pcのメニュー -->
       <div class="pc-menu">
@@ -32,12 +32,18 @@
 
     <main>
       <div id="about">
-        <h1>About</h1>
+        <h1 id="about_title">
+          <span class="letters letters-1">Welcome</span>
+          <span class="letters letters-2">to</span>
+          <span class="letters letters-3">About Me</span>
+        </h1>
         <p>私の自己紹介です</p>
       </div>
 
       <div id="who">
-        <h1>WHO AM I?</h1>
+        <h1>
+          WHO AM I?
+        </h1>
       </div>
 
       <div id="person" class="left">
@@ -46,7 +52,9 @@
       </div>
 
       <div id="hobby">
-        <h1>WHAT DO I LIKE?</h1>
+        <h1>
+          WHAT DO I LIKE?
+        </h1>
         <h2>趣味</h2>
 
         <div id="tabletennis" class="right">
@@ -102,7 +110,9 @@
       </div>
       
       <div id="skill">
-        <h1>SKILL</h1>
+        <h1>
+          SKILL
+        </h1>
       </div>
       <div id="programming" class="left">
           <h2>プログラミング</h2>
@@ -118,6 +128,11 @@
             <div id="dotinstall">
               <a href="https://dotinstall.com/" target="_blank"><img src="picture/play.png" alt="動画のアイコン"></a>
               <p>ドットインストール</p>
+            </div>
+
+            <div id="youtube">
+              <a href="https://youtube.com/" target="_blank"><img src="picture/youtube.png" alt="youtubeのアイコン"></a>
+              <p>ユーチューブ</p>
             </div>
           </div>
 
@@ -171,6 +186,8 @@
           
           sr.reveal( '.right', { origin: 'right' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
     </script>
+
+    <script src="js/anime.min.js"></script>
 
   </div>
 </body>

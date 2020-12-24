@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -10,24 +11,24 @@ html {
 #wrapper {
   width: 100%;
   overflow: hidden;
-  background-color: rgb(202, 182, 182);
+  background-color: #cab6b6;
 }
 
 header {
-  color: rgb(255, 255, 255);
+  color: white;
   background: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding: 0 16px;
 }
 
-.home {
+header .home {
   font-size: 3.8rem;
   margin: 0 auto;
 }
 
-.home:hover {
-  opacity: 0.5;
-}
 .phone-menu {
   position: absolute;
   top: -5px;
@@ -40,7 +41,7 @@ header {
   cursor: pointer;
 }
 
-.phone-menu #open.hide {
+.phone-menu.hide {
   display: none;
 }
 
@@ -55,12 +56,19 @@ header {
   padding: 64px;
   opacity: 0;
   pointer-events: none;
+  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
 .over-content.show {
   opacity: 1;
   pointer-events: auto;
+}
+
+.over-content.show li {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .over-content #close {
@@ -77,18 +85,17 @@ header {
   padding: 0;
 }
 
-.over-content li {
+.over-content ul li {
   margin-top: 24px;
   font-size: 3rem;
   font-family: 'arial';
   opacity: 0;
-  transform: translateY(16px);
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
-}
-
-.over-content.show li{
-  opacity: 1;
-  transform: none;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
 }
 
 .pc-menu {
@@ -113,10 +120,16 @@ a:hover {
   padding: 100px 0;
 }
 
-#contact h1 {
-  font-size: 3rem;
+#contact #me {
+  font-size: 2.5rem;
   font-family: 'arial';
   margin: 50px auto;
+  text-transform: uppercase;
+}
+
+#contact #me .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 
 #contact p {
@@ -129,7 +142,8 @@ a:hover {
   font-size: 5rem;
   font-family: 'Garamond';
   text-align: center;
-  text-decoration: underline solid rgba(114, 114, 114, 0.37);
+  -webkit-text-decoration: underline solid rgba(114, 114, 114, 0.37);
+          text-decoration: underline solid rgba(114, 114, 114, 0.37);
 }
 
 #sns {
@@ -150,15 +164,14 @@ a:hover {
   font-weight: bold;
 }
 
-#twitter,
-#instagram,
-#g-mail {
+#sns #twitter,
+#sns #instagram,
+#sns #g-mail,
+#sns #github {
   width: 100%;
   height: auto;
   margin: 100px auto;
 }
-
-
 
 /* フッター */
 footer {
@@ -169,10 +182,9 @@ footer {
   text-align: center;
 }
 
-#copylight {
+footer #copylight {
   padding-top: 8px;
 }
-
 
 @media screen and (min-width: 560px) {
   #home {
@@ -183,47 +195,45 @@ footer {
   .pc-menu {
     display: block;
   }
-
   .pc-menu ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     margin: 15px;
   }
-
-  .pc-menu li {
+  .pc-menu ul li {
     list-style: none;
     padding-right: 90px;
     font-size: 1.3rem;
   }
-
   .phone-menu {
     display: none;
   }
-
-  .over-content {
-    display: none;
-  }
-
   #contact {
     padding: 200px 0;
   }
-
   #sns img {
     width: 20%;
   }
-
+  .over-content {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 960px) {
   #contact {
     padding: 300px 0;
   }
-
   #sns {
     margin-bottom: 250px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
-
-
-
 }
+/*# sourceMappingURL=contact.css.map */

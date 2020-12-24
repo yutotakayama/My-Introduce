@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Introduce Site</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <!-- ホームボタン -->
+      <div class="home">
+        <span class="material-icons" id="home"><a href="./home.html">home</a></span>
+      </div>
+      <!-- pcのメニュー -->
+      <div class="pc-menu">
+        <nav>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./works.html">Works</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- phoneのメニューボタン -->
+      <div class="phone-menu">
+        <span class="material-icons" id="open">menu</span>
+      </div>
+      
+    </header>
+    
+    <main>
+      <!-- スライドショー -->
+      <div class="slide">
+        <img src="picture/programing.jpg" alt="プログラミング画像">
+        <img src="picture/adpDSC_6714.jpg" alt="ネコ画像">
+          <img src="picture/code-2620118_640.jpg" alt="作業画像">
+        </div>
+        <!-- コンテンツ -->
+        <div id="about">
+            <div id="about-title">
+              <h1 id="at"><a href="">About</a></h1>
+              <p><a href="./about.html">私の自己紹介です→</a></p>
+            </div>
+            <div id="about-icon">
+              <span class="material-icons" id="identity">perm_identity</span>
+            </div>
+
+          </div>
+        
+        <div id="works">
+          <div id="works-title">
+            <h1 id="wt">Works</h1>
+            <p><a href="./works.html"></a>これまでに作った、私の作品です→</a></p>
+          </div>
+          <div id="works-icon">
+            <span class="material-icons" id="product">work</span>
+          </div>
+        </div>
+
+        <address>
+          <div id="contact-title">
+            <h1 id="ct"><span class="text-wrapper">
+              <span class="letters">Contact</span>
+            </span>
+          </h1>
+            <p><a href="./contact.html"></a>ご連絡ください→</a></p>
+          </div>
+          <div id="contact-icon">
+            <span class="material-icons" id="mail">mail</span>
+          </div>
+        </address>
+      </main>
+      
+      <footer>
+      <div id="copylight">© 2020 Welcome To My Introduce Site. All rights reserved.</div>
+    </footer>
+    
+    <!-- phoneのメニュー -->
+    <div class="over-content">
+      <span class="material-icons" id="close">close</span>
+      <nav>
+        <ul>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./works.html">Works</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script src="js/home.js"></script>
+    <script src="js/anime.min.js"></script>
+  </div>
+</body>
+</html>

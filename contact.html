@@ -12,7 +12,7 @@
     <header>
       <!-- ホームボタン -->
       <div class="home">
-        <span class="material-icons" id="home"><a href="./index.html">home</a></span>
+        <span class="material-icons" id="home"><a href="./home.html">home</a></span>
       </div>
       <!-- pcのメニュー -->
       <div class="pc-menu">
@@ -32,7 +32,7 @@
 
     <main>
       <div id="contact">
-        <h1>Contact</h1>
+        <h1 id="me">Contact Me From Here</h1>
         <p>ご連絡ください</p>
       </div>
 
@@ -55,6 +55,14 @@
           <p>Mail</p>
           <p>(highmonutain392@gmail.com)</p>
         </div>
+
+        <div id="github">
+          <a href="https://github.com/yutotakayama">
+            <img src="picture/github.png" alt="githubのアイコン">
+          </a>
+          <p>Github</p>
+          <p>yutotakayama</p>
+        </div>
       </div>
     </main>
 
@@ -76,14 +84,7 @@
 
     <script src="js/contact.js"></script>
 
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script>
-          window.sr = ScrollReveal({ reset: true ,mobile: true});
-          
-          sr.reveal( '.left', { origin: 'left' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
-          
-          sr.reveal( '.right', { origin: 'right' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
-    </script>
+    <script src="js/anime.min.js"></script>
 
   </div>
 </body>

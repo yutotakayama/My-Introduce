@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -13,20 +14,20 @@ html {
 }
 
 header {
-  color: rgb(255, 255, 255);
+  color: white;
   background: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding: 0 16px;
 }
 
-.home {
+header .home {
   font-size: 3.8rem;
   margin: 0 auto;
 }
 
-.home:hover {
-  opacity: 0.5;
-}
 .phone-menu {
   position: absolute;
   top: -5px;
@@ -54,12 +55,19 @@ header {
   padding: 64px;
   opacity: 0;
   pointer-events: none;
+  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
 .over-content.show {
   opacity: 1;
   pointer-events: auto;
+}
+
+.over-content.show li {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .over-content #close {
@@ -76,18 +84,17 @@ header {
   padding: 0;
 }
 
-.over-content li {
+.over-content ul li {
   margin-top: 24px;
   font-size: 3rem;
   font-family: 'arial';
   opacity: 0;
-  transform: translateY(16px);
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
-}
-
-.over-content.show li{
-  opacity: 1;
-  transform: none;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
 }
 
 .pc-menu {
@@ -116,6 +123,16 @@ a:hover {
   font-size: 3rem;
   font-family: 'arial';
   margin: 50px auto;
+  position: relative;
+}
+
+#about h1 .letters {
+  position: absolute;
+  margin: auto;
+  left: 50px;
+  top: -10px;
+  right: 50px;
+  opacity: 0;
 }
 
 #about p {
@@ -128,11 +145,12 @@ a:hover {
   text-align: center;
   font-family: 'Garamond';
   font-size: 5rem;
-  text-decoration: underline solid rgba(128, 128, 128, 0.171);
+  -webkit-text-decoration: underline solid rgba(128, 128, 128, 0.171);
+          text-decoration: underline solid rgba(128, 128, 128, 0.171);
 }
 
 #person {
-  color: rgb(0, 0, 0);
+  color: black;
   background-image: url();
   width: 100%;
   height: auto;
@@ -168,7 +186,8 @@ a:hover {
 #hobby h1 {
   font-family: 'Garamond';
   font-size: 5rem;
-  text-decoration: underline solid rgba(128, 128, 128, 0.171);
+  -webkit-text-decoration: underline solid rgba(128, 128, 128, 0.171);
+          text-decoration: underline solid rgba(128, 128, 128, 0.171);
 }
 
 #hobby h2 {
@@ -226,7 +245,8 @@ a:hover {
 }
 
 #grades .best {
-  text-decoration: underline solid rgb(65, 141, 204);
+  -webkit-text-decoration: underline solid #418dcc;
+          text-decoration: underline solid #418dcc;
 }
 
 #attention {
@@ -296,7 +316,7 @@ a:hover {
   margin: 0 auto;
 }
 
-#comic li {
+#comic ul li {
   font-size: 1.5rem;
   font-family: 游ゴシック;
   font-weight: bold;
@@ -309,7 +329,8 @@ a:hover {
   text-align: center;
   font-family: 'Garamond';
   font-size: 5rem;
-  text-decoration: underline solid rgba(128, 128, 128, 0.171);
+  -webkit-text-decoration: underline solid rgba(128, 128, 128, 0.171);
+          text-decoration: underline solid rgba(128, 128, 128, 0.171);
 }
 
 #programming {
@@ -319,7 +340,7 @@ a:hover {
   padding-bottom: 100px;
 }
 
-#programming h2{
+#programming h2 {
   font-size: 3rem;
   font-family: 游ゴシック;
   margin: 0 auto;
@@ -342,51 +363,44 @@ a:hover {
   color: black;
 }
 
-#google {
-  border: 3px solid black;
-  width: 50%;
-  margin: 0 auto;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 3px 3px;
-}
-
-#google img {
-  width: 20%;
-  height: auto;
-  margin-top: 20px;
-}
-
-#dotinstall {
+#google,
+#dotinstall,
+#youtube {
   border: 3px solid black;
   width: 50%;
   margin: 30px auto;
   border-radius: 10px;
   background-color: white;
-  box-shadow: 3px 3px;
+  -webkit-box-shadow: 3px 3px;
+          box-shadow: 3px 3px;
 }
 
-#dotinstall img {
+#google img,
+#dotinstall img,
+#youtube img {
   width: 20%;
   height: auto;
   margin-top: 20px;
 }
 
-#language img {
-  width: 20%;
-  height: auto;
-  margin-top: 20px;
-}
-
-#html,
-#css,
-#javascript {
+#language #html,
+#language #css,
+#language #javascript {
   border: 3px solid black;
   width: 50%;
   margin: 30px auto;
   border-radius: 10px;
   background-color: white;
-  box-shadow: 3px 3px;
+  -webkit-box-shadow: 3px 3px;
+          box-shadow: 3px 3px;
+}
+
+#language #html img,
+#language #css img,
+#language #javascript img {
+  width: 20%;
+  height: auto;
+  margin-top: 20px;
 }
 
 .scroll-top {
@@ -403,10 +417,10 @@ a:hover {
   color: #fff;
   font-size: 3rem;
 }
+
 .scroll-top:hover {
   cursor: pointer;
 }
-
 
 /* フッター */
 footer {
@@ -417,10 +431,9 @@ footer {
   text-align: center;
 }
 
-#copylight {
+footer #copylight {
   padding-top: 8px;
 }
-
 
 @media screen and (min-width: 560px) {
   #home {
@@ -431,81 +444,69 @@ footer {
   .pc-menu {
     display: block;
   }
-
   .pc-menu ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     margin: 15px;
   }
-
-  .pc-menu li {
+  .pc-menu ul li {
     list-style: none;
     padding-right: 90px;
     font-size: 1.3rem;
   }
-
   .phone-menu {
     display: none;
   }
-
   .over-content {
     display: none;
   }
-
   #about {
     padding: 200px 0;
   }
-
   #person p {
     text-align: center;
   }
-
   #attention {
     text-align: center;
   }
-
   #game p {
     text-align: center;
   }
-
   #comic p {
     text-align: center;
   }
-
   #study {
     width: 100%;
     height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
-
-  #google {
-    width: 30%;
-    margin: 30px auto;
-  }
-  
-  #google img {
+  #study #google,
+  #study #dotinstall,
+  #study #youtube {
     width: 30%;
   }
-  
-  #dotinstall {
-    width: 30%;
-    margin: 30px auto;
+  #study #google img,
+  #study #dotinstall img,
+  #study #youtube img {
+    width: 20%;
   }
-  
-  #dotinstall img {
-    width: 30%;
-  }
-
   #language {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
-  
   #language img {
     width: 30%;
   }
-  
-  #html,
-  #css,
-  #javascript {
+  #language #html,
+  #language #css,
+  #language #javascript {
     width: 20%;
   }
 }
@@ -514,25 +515,26 @@ footer {
   #about {
     padding: 300px 0;
   }
-
   #person p {
     width: 80%;
   }
-
   #comic p {
     width: 80%;
   }
-
   #google {
     width: 20%;
   }
-  
   #dotinstall {
     width: 20%;
   }
-
+  #youtube {
+    width: 20%;
+  }
   #language {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
-
 }
+/*# sourceMappingURL=about.css.map */

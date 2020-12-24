@@ -12,7 +12,7 @@
     <header>
       <!-- ホームボタン -->
       <div class="home">
-        <span class="material-icons" id="home"><a href="./index.html">home</a></span>
+        <span class="material-icons" id="home"><a href="./home.html">home</a></span>
       </div>
       <!-- pcのメニュー -->
       <div class="pc-menu">
@@ -32,12 +32,16 @@
 
     <main>
       <div id="works">
-        <h1>Works</h1>
+        <h1 id="look">
+          <span class="text-wrapper">
+            <span class="letters">Look at My Works!</span>
+          </span>
+        </h1>
         <p>これまでに作った、私の作品です</p>
       </div>
 
       <div id="unfinished">
-        <p>Under Construction...</p>
+        <p id="uc">Under Construction...</p>
       </div>
     </main>
 
@@ -59,14 +63,7 @@
 
     <script src="js/works.js"></script>
 
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script>
-          window.sr = ScrollReveal({ reset: true ,mobile: true});
-          
-          sr.reveal( '.left', { origin: 'left' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
-          
-          sr.reveal( '.right', { origin: 'right' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
-    </script>
+    <script src="js/anime.min.js"></script>
 
   </div>
 </body>
