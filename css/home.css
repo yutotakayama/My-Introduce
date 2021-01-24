@@ -70,7 +70,7 @@ header .home {
           transform: none;
 }
 
-.over-content#close {
+.over-content #close {
   position: absolute;
   top: 10px;
   right: 16px;
@@ -130,9 +130,15 @@ a:hover {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   width: 100%;
-  height: 400px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slide img::before {
+  display: block;
+  content: '';
+  padding: 50%;
 }
 
 #about {
