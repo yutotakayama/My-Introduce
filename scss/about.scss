@@ -1,3 +1,9 @@
+$Gray:  rgba(128, 128, 128, 0.589);
+$Black: black;
+$UnderLineColor: rgba(128, 128, 128, 0.171);
+$Gothic: 游ゴシック;
+$FontWeight: bold;
+
 html {
   font-size: 62.5%;
 }
@@ -109,7 +115,7 @@ a {
 
 
 #about {
-  color: black;
+  color: $Black;
   width: 100%;
   height: auto;
   text-align: center;
@@ -145,14 +151,13 @@ a {
     text-align: center;
     font-family: 'Garamond';
     font-size: 5rem;
-    text-decoration: underline solid rgba(128, 128, 128, 0.171);
+    text-decoration: underline solid $UnderLineColor;
 
   }
 }
 
 #person {
-  color: rgb(0, 0, 0);
-  background-image: url();
+  color: $Black;
   width: 100%;
   height: auto;
   text-align: center;
@@ -160,7 +165,7 @@ a {
 
   h2 {
     font-size: 3rem;
-    font-family: 游ゴシック;
+    font-family: $Gothic;
     margin: 50px auto;
   }
   
@@ -169,16 +174,16 @@ a {
     height: auto;
     margin: 0 auto;
     font-size: 1.5rem;
-    font-family: 游ゴシック;
-    font-weight: bold;
-    color: rgba(128, 128, 128, 0.589);
+    font-family: $Gothic;
+    font-weight: $FontWeight;
+    color: $Gray;
     text-align: left;
   }
 }
 
 
 #hobby {
-  color: black;
+  color: $Black;
   width: 100%;
   height: auto;
   text-align: center;
@@ -187,34 +192,33 @@ a {
   h1 {
     font-family: 'Garamond';
     font-size: 5rem;
-    text-decoration: underline solid rgba(128, 128, 128, 0.171);
+    text-decoration: underline solid $UnderLineColor;
   }
   
   h2 {
     font-size: 3rem;
-    font-family: 游ゴシック;
-    font-weight: bold;
+    font-family: $Gothic;
+    font-weight: $FontWeight;
     margin: 100px auto 0 auto;
   }
   
   h3 {
     font-size: 2.5rem;
-    font-family: 游ゴシック;
+    font-family: $Gothic;
     margin: 0 auto;
     padding: 100px 0 30px 0;
   }
 }
 
-
 #tabletennis {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  font-family: 游ゴシック;
-  font-weight: bold;
+  font-family: $Gothic;
+  font-weight: $FontWeight;
 
   p {
-    color: rgba(128, 128, 128, 0.589);
+    color: $Gray;
     font-size: 1.5rem;
   }
   
@@ -222,16 +226,16 @@ a {
     font-size: 1.5rem;
     list-style: none;
     margin: 40px 0;
-    font-family: 游ゴシック;
-    font-weight: bold;
-    color: rgba(128, 128, 128, 0.589);
+    font-family: $Gothic;
+    font-weight: $FontWeight;
+    color: $Gray;
   }
 }
 
 
 #grades {
-  font-family: 游ゴシック;
-  font-weight: bold;
+  font-family: $Gothic;
+  font-weight: $FontWeight;
   width: 60%;
   margin: 0 auto;
 
@@ -243,7 +247,7 @@ a {
   li {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: rgba(128, 128, 128, 0.589);
+    color: $Gray;
   }
   
   .best {
@@ -260,34 +264,34 @@ a {
 }
 
 #game {
-  color: black;
+  color: $Black;
   width: 100%;
   height: auto;
 
   p {
     width: 60%;
     font-size: 1.5rem;
-    font-family: 游ゴシック;
-    font-weight: bold;
-    color: rgba(128, 128, 128, 0.589);
+    font-family: $Gothic;
+    font-weight: $FontWeight;
+    color: $Gray;
     text-align: left;
     margin: 0 auto;
   }
   
   h4 {
     font-size: 2rem;
-    font-family: 游ゴシック;
-    font-weight: bold;
+    font-family: $Gothic;
+    font-weight: $FontWeight;
     margin: 50px 0 20px 0;
   }
   
   li {
     font-size: 1.5rem;
-    font-family: 游ゴシック;
-    font-weight: bold;
+    font-family: $Gothic;
+    font-weight: $FontWeight;
     padding: 10px 0;
     list-style: none;
-    color: rgba(128, 128, 128, 0.589);
+    color: $Gray;
   }
 }
 
@@ -301,16 +305,16 @@ a {
     width: 60%;
     text-align: left;
     font-size: 1.5rem;
-    font-family: 游ゴシック;
-    font-weight: bold;
-    color: rgba(128, 128, 128, 0.589);
+    font-family: $Gothic;
+    font-weight: $FontWeight;
+    color: $Gray;
     margin: 0 auto;
   }
   
   h4 {
     font-size: 2rem;
-    font-family: 游ゴシック;
-    font-weight: bold;
+    font-family: $Gothic;
+    font-weight: $FontWeight;
     margin: 50px 0 20px 0;
   }
   
@@ -320,11 +324,11 @@ a {
 
     li {
       font-size: 1.5rem;
-      font-family: 游ゴシック;
-      font-weight: bold;
+      font-family: $Gothic;
+      font-weight: $FontWeight;
       padding: 10px 0;
       list-style-type: none;
-      color: rgba(128, 128, 128, 0.589);
+      color: $Gray;
       }
   }
   
@@ -335,7 +339,7 @@ a {
   text-align: center;
   font-family: 'Garamond';
   font-size: 5rem;
-  text-decoration: underline solid rgba(128, 128, 128, 0.171);
+  text-decoration: underline solid $UnderLineColor;
 }
 
 #programming {
@@ -346,71 +350,70 @@ a {
 
   h2{
     font-size: 3rem;
-    font-family: 游ゴシック;
+    font-family: $Gothic;
     margin: 0 auto;
     padding: 50px 0 20px 0;
   }
   
   p {
     font-size: 1.5rem;
-    font-family: 游ゴシック;
+    font-family: $Gothic;
     padding: 30px 0;
-    font-weight: bold;
-    color: rgba(128, 128, 128, 0.589);
+    font-weight: $FontWeight;
+    color: $Gray;
   }
   
   h3 {
     font-size: 2rem;
-    font-family: 游ゴシック;
+    font-family: $Gothic;
     padding: 30px 0;
-    font-weight: bold;
-    color: black;
+    font-weight: $FontWeight;
+    color: $Black;
   }
-}
 
-
-#google,
-#dotinstall,
-#youtube {
-  border: 3px solid black;
-  width: 50%;
-  margin: 30px auto;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 3px 3px;
-
-  img {
-    width: 20%;
-    height: auto;
-    margin-top: 20px;
-  }
-}
-
-#language {
-
-  #html,
-  #css,
-  #javascript {
-    border: 3px solid black;
-    width: 50%;
-    margin: 30px auto;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 3px 3px;
-
+  .swiper-container {
+    width: 100%;
+    height: 200px;
+  
     img {
-    width: 20%;
-    height: auto;
-    margin-top: 20px;
+      width: 20%;
+      margin-top: 20px;
+    }
+  }
+  
+  #language {
+  
+    #html,
+    #css,
+    #javascript {
+      border: 3px solid rgba(0, 0, 0, 0.021);
+      width: 50%;
+      margin: 30px auto;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 
+      0 1.9px 2.5px rgba(0, 0, 0, 0.057),
+      0 5px 6.1px rgba(0, 0, 0, 0.076),
+      0 10.1px 11.4px rgba(0, 0, 0, 0.086),
+      0 19.2px 19.8px rgba(0, 0, 0, 0.092),
+      0 38.4px 34.8px rgba(0, 0, 0, 0.1),
+      0 101px 74px rgba(0, 0, 0, 0.13);;
+  
+      img {
+      width: 20%;
+      height: auto;
+      margin-top: 20px;
+      }
     }
   }
 }
 
 
+
 .scroll-top {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 50px;
   z-index: 100;
   background-color: #999;
   opacity: .8;
@@ -426,8 +429,6 @@ a {
   }
 }
 
-
-/* フッター */
 footer {
   background-color: gray;
   color: white;
@@ -459,7 +460,7 @@ footer {
 
       li {
         list-style: none;
-        padding-right: 90px;
+        margin-right: 90px;
         font-size: 1.3rem;
       }
     }
@@ -502,37 +503,37 @@ footer {
     }
   }
 
-  #study {
-    width: 100%;
-    height: auto;
-    display: flex;
 
-    #google,
-    #dotinstall,
-    #youtube {
-      width: 30%;
 
+  #programming {
+    h3 {
+      padding-top: 100px;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 300px;
+    
       img {
         width: 20%;
+        margin-top: 20px;
       }
     }
-    
-  }
-    
-    
+
     #language {
       display: flex;
-
-      img {
-        width: 30%;
-      }
 
       #html,
       #css,
       #javascript {
         width: 20%;
+        margin: 30px auto;
+        img {
+          width: 30%;
+        }
       }
     }
+
+  }
     
 
   
@@ -555,20 +556,28 @@ footer {
     }
   }
 
-  #google {
-    width: 20%;
-  }
+  #programming {
+    .swiper-container {
+      width: 100%;
+      height: 350px;
+    
+      img {
+        width: 20%;
+        margin-top: 20px;
+      }
+    }
   
-  #dotinstall {
-    width: 20%;
-  }
-
-  #youtube {
-    width: 20%;
-  }
-
-  #language {
-    display: flex;
+    #language {
+      display: flex;
+      margin: 40px;
+  
+      #html,
+      #css,
+      #javascript {
+        width: 20%;
+        margin: 20px auto;
+      }
+    }
   }
 
 }
