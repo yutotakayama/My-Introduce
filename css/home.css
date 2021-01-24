@@ -135,12 +135,6 @@ a:hover {
      object-fit: cover;
 }
 
-.slide img::before {
-  display: block;
-  content: '';
-  padding: 50%;
-}
-
 #about {
   color: black;
   width: 100%;
