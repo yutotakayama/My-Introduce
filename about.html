@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About me</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/about.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
 </head>
 <body>
   <div id="wrapper">
@@ -18,7 +20,7 @@
       <div class="pc-menu">
         <nav>
           <ul>
-            <li><a href="./about.html">about</a></li>
+            <li><a href="./about.html">About</a></li>
             <li><a href="./works.html">Works</a></li>
             <li><a href="./contact.html">Contact</a></li>
           </ul>
@@ -65,7 +67,7 @@
             <li>右シェーク裏裏ドライブ主戦型</li>
             <li>好きな選手：ティモ・ボル</li>
           </ul>
-
+          
           <div id="grades">
             <h4>最高成績</h4>
             <ul>
@@ -73,7 +75,7 @@
               <li>高校：県大会3回戦</li>
               <li class="best">大学：東海大会出場</li>
             </ul>
-
+            
           </div>
           <p id="attention">※大学は部活動ではなく、三重のクラブチームに所属しています</p>
         </div>
@@ -95,7 +97,7 @@
 
         <div id="comic" class="right">
           <h3>漫画</h3>
-          <p>いろいろなジャンルの漫画を読んでいます。最近、読みたい漫画がなくて少し悩んでいます。(汗)</p>
+          <p>いろいろなジャンルの漫画を読んでいます。</p>
 
           <h4>読んだことある漫画</h4>
           <ul>
@@ -114,25 +116,33 @@
           SKILL
         </h1>
       </div>
-      <div id="programming" class="left">
+      <div id="programming">
           <h2>プログラミング</h2>
           <p>Webエンジニアになるために<br>独学で勉強しています</p>
 
           <h3>勉強方法</h3>
-          <div id="study">
-            <div id="google">
-              <a href="https://www.google.com/?hl=ja" target="_blank"><img src="picture/google.png" alt="googleのアイコン"></a>
-              <p>Google検索</p>
-            </div>
-
-            <div id="dotinstall">
-              <a href="https://dotinstall.com/" target="_blank"><img src="picture/play.png" alt="動画のアイコン"></a>
-              <p>ドットインストール</p>
-            </div>
-
-            <div id="youtube">
-              <a href="https://youtube.com/" target="_blank"><img src="picture/youtube.png" alt="youtubeのアイコン"></a>
-              <p>ユーチューブ</p>
+          <!-- スライダー -->
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="picture/google.png" alt="googleのアイコン">
+                  <p>Google検索</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="picture/play.png" alt="dotinstallのアイコン">
+                  <p>ドットインストール</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="picture/youtube.png" alt="youtubeのアイコン">
+                  <p>Youtube</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="picture/online-course.png" alt="Udemyのアイコン">
+                  <p>Udemy</p>
+                </div>
             </div>
           </div>
 
@@ -140,11 +150,11 @@
           <div id="language">
             <div id="html">
               <img src="picture/html-5.png" alt="htmlのアイコン">
-              <p>HTML</p>
+              <p>HTML5</p>
             </div>
             <div id="css">
               <img src="picture/css-3.png" alt="cssのアイコン">
-              <p>CSS</p>
+              <p>CSS3(SCSS)</p>
             </div>
             <div id="javascript">
               <img src="picture/javascript.png" alt="JavaScriptのアイコン">
@@ -175,20 +185,25 @@
         </ul>
       </nav>
     </div>
-
-    <script src="js/about.js"></script>
-
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script>
-          window.sr = ScrollReveal({ reset: true ,mobile: true});
-          
-          sr.reveal( '.left', { origin: 'left' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
-          
-          sr.reveal( '.right', { origin: 'right' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
-    </script>
-
-    <script src="js/anime.min.js"></script>
-
   </div>
+
+    <script src="js/menu.js"></script>
+
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    
+    <script>
+      window.sr = ScrollReveal({ reset: true ,mobile: true});
+      
+      sr.reveal( '.left', { origin: 'left' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
+      
+      sr.reveal( '.right', { origin: 'right' , distance: '100%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
+      </script>
+
+      <script src="js/anime.min.js"></script>
+
+      <script src="js/about.js"></script>
 </body>
 </html>
