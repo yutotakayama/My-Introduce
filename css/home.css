@@ -261,9 +261,6 @@ footer #copylight {
     padding-right: 90px;
     font-size: 1.3rem;
   }
-  .pc-menu li:hover {
-    opacity: 0.5;
-  }
   .phone-menu {
     display: none;
   }
