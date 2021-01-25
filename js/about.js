@@ -1,7 +1,6 @@
 'use strict';
 
 {
-  
   // アニメーション about
   window.addEventListener('load', about, false);
   function about() {
@@ -92,12 +91,11 @@
  
 
     // ページトップへ戻る
-
     scrollTop('reply', 500);
 
     function scrollTop(elem,duration) {
       let target = document.getElementById(elem);
-      target.addEventListener('click', function() {
+      target.addEventListener('click', () => {
         let currentY = window.pageYOffset; 
         let step = duration/currentY > 1 ? 10 : 100;
         let timeStep = duration/currentY * step;

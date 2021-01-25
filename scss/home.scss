@@ -1,3 +1,5 @@
+$FfArial: 'arial', sans-serif;
+
 html {
   font-size: 62.5%;
 }
@@ -83,7 +85,7 @@ header {
     li {
       margin-top: 24px;
       font-size: 3rem;
-      font-family: 'arial';
+      font-family: $FfArial;
       opacity: 0;
       transform: translateY(16px);
       transition: opacity 0.5s, transform 0.5s;
@@ -137,13 +139,13 @@ a {
 
   h1 {
     font-size: 3rem;
-    font-family: 'arial';
+    font-family: $FFarial;
     margin: 10% auto;
   }
 
   p {
     font-size: 1.5rem;
-    font-family: 'arial';
+    font-family: $FFarial;
     padding-top: 50px;
     padding-bottom: 100px;
   }
@@ -164,13 +166,13 @@ a {
 
   h1 {
     font-size: 3rem;
-    font-family: 'arial';
+    font-family: $FFarial;
     margin: 10% auto;
   }
 
   p {
     font-size: 1.5rem;
-    font-family: 'arial';
+    font-family: $FFarial;
     padding-top: 50px;
     padding-bottom: 100px;
   }
@@ -191,7 +193,7 @@ address {
 
   h1 {
     font-size: 3rem;
-    font-family: 'arial';
+    font-family: $FFarial;
     margin: 10% auto;
     position: relative;
 
@@ -212,7 +214,7 @@ address {
 
   p {
     font-size: 1.5rem;
-    font-family: 'arial';
+    font-family: $FFarial;
     padding-top: 50px;
     padding-bottom: 100px;
   }

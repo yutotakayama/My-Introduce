@@ -1,7 +1,9 @@
 $Gray:  rgba(128, 128, 128, 0.589);
 $Black: black;
 $UnderLineColor: rgba(128, 128, 128, 0.171);
-$Gothic: 游ゴシック;
+$FfGothic: 游ゴシック, sans-serif;
+$FfArial: 'arial', sans-serif;
+$FfGaramond: 'Garamond', sans-serif;
 $FontWeight: bold;
 
 html {
@@ -88,7 +90,7 @@ header {
     li {
       margin-top: 24px;
       font-size: 3rem;
-      font-family: 'arial';
+      font-family: $FfArial;
       opacity: 0;
       transform: translateY(16px);
       transition: opacity 0.5s, transform 0.5s;
@@ -123,7 +125,7 @@ a {
 
   h1 {
     font-size: 3rem;
-    font-family: 'arial';
+    font-family: $FfArial;
     margin: 50px auto;
     position: relative;
 
@@ -139,7 +141,7 @@ a {
   
   p {
     font-size: 1.5rem;
-    font-family: 'arial';
+    font-family: $FfArial;
     padding: 50px 0;
   }
 }
@@ -149,7 +151,7 @@ a {
 
   h1 {
     text-align: center;
-    font-family: 'Garamond';
+    font-family: $FfGaramond;
     font-size: 5rem;
     text-decoration: underline solid $UnderLineColor;
 
@@ -165,7 +167,7 @@ a {
 
   h2 {
     font-size: 3rem;
-    font-family: $Gothic;
+    font-family: $FfGothic;
     margin: 50px auto;
   }
   
@@ -174,7 +176,7 @@ a {
     height: auto;
     margin: 0 auto;
     font-size: 1.5rem;
-    font-family: $Gothic;
+    font-family: $FfGothic;
     font-weight: $FontWeight;
     color: $Gray;
     text-align: left;
@@ -190,21 +192,21 @@ a {
   padding: 300px 0;
 
   h1 {
-    font-family: 'Garamond';
+    font-family: $FfGaramond;
     font-size: 5rem;
     text-decoration: underline solid $UnderLineColor;
   }
   
   h2 {
     font-size: 3rem;
-    font-family: $Gothic;
+    font-family: $FfGothic;
     font-weight: $FontWeight;
     margin: 100px auto 0 auto;
   }
   
   h3 {
     font-size: 2.5rem;
-    font-family: $Gothic;
+    font-family: $FfGothic;
     margin: 0 auto;
     padding: 100px 0 30px 0;
   }
@@ -214,7 +216,7 @@ a {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  font-family: $Gothic;
+  font-family: $FfGothic;
   font-weight: $FontWeight;
 
   p {
@@ -226,7 +228,7 @@ a {
     font-size: 1.5rem;
     list-style: none;
     margin: 40px 0;
-    font-family: $Gothic;
+    font-family: $FfGothic;
     font-weight: $FontWeight;
     color: $Gray;
   }
@@ -234,7 +236,7 @@ a {
 
 
 #grades {
-  font-family: $Gothic;
+  font-family: $FfGothic;
   font-weight: $FontWeight;
   width: 60%;
   margin: 0 auto;
@@ -271,7 +273,7 @@ a {
   p {
     width: 60%;
     font-size: 1.5rem;
-    font-family: $Gothic;
+    font-family: $FfGothic;
     font-weight: $FontWeight;
     color: $Gray;
     text-align: left;
@@ -280,14 +282,14 @@ a {
   
   h4 {
     font-size: 2rem;
-    font-family: $Gothic;
+    font-family: $FfGothic;
     font-weight: $FontWeight;
     margin: 50px 0 20px 0;
   }
   
   li {
     font-size: 1.5rem;
-    font-family: $Gothic;
+    font-family: $FfGothic;
     font-weight: $FontWeight;
     padding: 10px 0;
     list-style: none;
@@ -305,7 +307,7 @@ a {
     width: 60%;
     text-align: left;
     font-size: 1.5rem;
-    font-family: $Gothic;
+    font-family: $FfGothic;
     font-weight: $FontWeight;
     color: $Gray;
     margin: 0 auto;
@@ -313,7 +315,7 @@ a {
   
   h4 {
     font-size: 2rem;
-    font-family: $Gothic;
+    font-family: $FfGothic;
     font-weight: $FontWeight;
     margin: 50px 0 20px 0;
   }
@@ -324,7 +326,7 @@ a {
 
     li {
       font-size: 1.5rem;
-      font-family: $Gothic;
+      font-family: $FfGothic;
       font-weight: $FontWeight;
       padding: 10px 0;
       list-style-type: none;
@@ -337,7 +339,7 @@ a {
 
 #skill h1 {
   text-align: center;
-  font-family: 'Garamond';
+  font-family: $FfGaramond;
   font-size: 5rem;
   text-decoration: underline solid $UnderLineColor;
 }
@@ -350,14 +352,14 @@ a {
 
   h2{
     font-size: 3rem;
-    font-family: $Gothic;
+    font-family: $FfGothic;
     margin: 0 auto;
     padding: 50px 0 20px 0;
   }
   
   p {
     font-size: 1.5rem;
-    font-family: $Gothic;
+    font-family: $FfGothic;
     padding: 30px 0;
     font-weight: $FontWeight;
     color: $Gray;
@@ -365,7 +367,7 @@ a {
   
   h3 {
     font-size: 2rem;
-    font-family: $Gothic;
+    font-family: $FfGothic;
     padding: 30px 0;
     font-weight: $FontWeight;
     color: $Black;
