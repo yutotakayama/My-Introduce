@@ -1,19 +1,4 @@
 @charset "UTF-8";
-html {
-  font-size: 62.5%;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-#wrapper {
-  width: 100%;
-  overflow: hidden;
-  background-color: #cab6b6;
-}
-
 header {
   color: white;
   background: black;
@@ -41,7 +26,7 @@ header .home {
   cursor: pointer;
 }
 
-.phone-menu.hide {
+.phone-menu #open.hide {
   display: none;
 }
 
@@ -51,13 +36,14 @@ header .home {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.76);
+  background: rgba(0, 0, 0, 0.788);
   text-align: center;
   padding: 64px;
   opacity: 0;
   pointer-events: none;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  color: white;
 }
 
 .over-content.show {
@@ -88,7 +74,7 @@ header .home {
 .over-content ul li {
   margin-top: 24px;
   font-size: 3rem;
-  font-family: 'arial';
+  font-family: "arial", sans-serif;
   opacity: 0;
   -webkit-transform: translateY(16px);
           transform: translateY(16px);
@@ -100,6 +86,63 @@ header .home {
 
 .pc-menu {
   display: none;
+}
+
+/* フッター */
+footer {
+  background-color: gray;
+  color: white;
+  width: auto;
+  height: 40px;
+  text-align: center;
+}
+
+footer #copylight {
+  padding-top: 8px;
+}
+
+@media screen and (min-width: 560px) {
+  #home {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+  }
+  .pc-menu {
+    display: block;
+  }
+  .pc-menu ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 15px;
+  }
+  .pc-menu li {
+    list-style: none;
+    padding-right: 90px;
+    font-size: 1.3rem;
+  }
+  .phone-menu {
+    display: none;
+  }
+  .over-content {
+    display: none;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #cab6b6;
 }
 
 a {
@@ -173,43 +216,7 @@ a:hover {
   margin: 100px auto;
 }
 
-/* フッター */
-footer {
-  background-color: gray;
-  color: white;
-  width: auto;
-  height: 40px;
-  text-align: center;
-}
-
-footer #copylight {
-  padding-top: 8px;
-}
-
 @media screen and (min-width: 560px) {
-  #home {
-    position: absolute;
-    top: 10px;
-    left: 16px;
-  }
-  .pc-menu {
-    display: block;
-  }
-  .pc-menu ul {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 15px;
-  }
-  .pc-menu ul li {
-    list-style: none;
-    padding-right: 90px;
-    font-size: 1.3rem;
-  }
-  .phone-menu {
-    display: none;
-  }
   #contact {
     padding: 200px 0;
   }

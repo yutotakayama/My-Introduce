@@ -1,18 +1,4 @@
 @charset "UTF-8";
-html {
-  font-size: 62.5%;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-#wrapper {
-  width: 100%;
-  overflow: hidden;
-}
-
 header {
   color: white;
   background: black;
@@ -50,13 +36,14 @@ header .home {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.76);
+  background: rgba(0, 0, 0, 0.788);
   text-align: center;
   padding: 64px;
   opacity: 0;
   pointer-events: none;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  color: white;
 }
 
 .over-content.show {
@@ -87,7 +74,7 @@ header .home {
 .over-content ul li {
   margin-top: 24px;
   font-size: 3rem;
-  font-family: 'arial';
+  font-family: "arial", sans-serif;
   opacity: 0;
   -webkit-transform: translateY(16px);
           transform: translateY(16px);
@@ -97,133 +84,7 @@ header .home {
   transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
 }
 
-.over-content ul li:hover {
-  opacity: 0.5;
-}
-
 .pc-menu {
-  display: none;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-/* メイン */
-.slide {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-color: black;
-  border: 1px solid #7a7a7a;
-}
-
-.slide img {
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#about {
-  color: black;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  padding-top: 100px;
-}
-
-#about h1 {
-  font-size: 3rem;
-  font-family: 'arial';
-  margin: 10% auto;
-}
-
-#about p {
-  font-size: 1.5rem;
-  font-family: 'arial';
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
-
-#about #identity {
-  display: none;
-}
-
-#works {
-  background-color: black;
-  color: white;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  padding-top: 100px;
-}
-
-#works h1 {
-  font-size: 3rem;
-  font-family: 'arial';
-  margin: 10% auto;
-}
-
-#works p {
-  font-size: 1.5rem;
-  font-family: 'arial';
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
-
-#works #product {
-  display: none;
-}
-
-address {
-  background-color: #cab6b6;
-  color: black;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  padding-top: 100px;
-}
-
-address h1 {
-  font-size: 3rem;
-  font-family: 'arial';
-  margin: 10% auto;
-  position: relative;
-}
-
-address h1 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
-}
-
-address h1 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
-
-address p {
-  font-size: 1.5rem;
-  font-family: 'arial';
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
-
-address #mail {
   display: none;
 }
 
@@ -269,6 +130,164 @@ footer #copylight {
   }
 }
 
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: white;
+}
+
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* メイン */
+#about {
+  color: black;
+  width: 90%;
+  height: auto;
+  margin: 50px auto 100px auto;
+  text-align: center;
+  background-color: #f0eeee;
+  padding-top: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#about:hover {
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+          box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+}
+
+#about h1 {
+  font-size: 3rem;
+  font-family: "arial", sans-serif;
+  margin: 10% auto;
+}
+
+#about p {
+  font-size: 1.5rem;
+  font-family: "arial", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#about #identity {
+  display: none;
+}
+
+#works {
+  background-color: black;
+  color: white;
+  width: 90%;
+  height: auto;
+  margin: 100px auto;
+  text-align: center;
+  padding-top: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#works:hover {
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+          box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+}
+
+#works h1 {
+  font-size: 3rem;
+  font-family: "arial", sans-serif;
+  margin: 10% auto;
+}
+
+#works p {
+  font-size: 1.5rem;
+  font-family: "arial", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#works #product {
+  display: none;
+}
+
+address {
+  background-color: #cab6b6;
+  color: black;
+  width: 90%;
+  height: auto;
+  margin: 100px auto;
+  text-align: center;
+  padding-top: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+address:hover {
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+          box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+}
+
+address h1 {
+  font-size: 3rem;
+  font-family: "arial", sans-serif;
+  margin: 10% auto;
+  position: relative;
+}
+
+address h1 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+address h1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+address p {
+  font-size: 1.5rem;
+  font-family: "arial", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+address #mail {
+  display: none;
+}
+
 @media screen and (min-width: 960px) {
   #about {
     display: -webkit-box;
@@ -278,6 +297,7 @@ footer #copylight {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
+    padding: 200px 0px;
   }
   #about #identity {
     display: block;
@@ -296,6 +316,7 @@ footer #copylight {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
+    padding: 200px 0px;
   }
   #works #product {
     display: block;
@@ -309,6 +330,7 @@ footer #copylight {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
+    padding: 200px 0px;
   }
   address #mail {
     display: block;

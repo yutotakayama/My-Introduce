@@ -1,0 +1,131 @@
+$FfArial: 'arial', sans-serif;
+
+header {
+  color: rgb(255, 255, 255);
+  background: black;
+  display: flex;
+  padding: 0 16px;
+
+  .home {
+    font-size: 3.8rem;
+    margin: 0 auto;
+  }
+}
+
+
+
+.phone-menu {
+  position: absolute;
+  top: -5px;
+  right: 16px;
+
+  #open {
+    font-size: 3.2rem;
+    line-height: 64px;
+    cursor: pointer;
+
+    &.hide {
+      display: none;
+    }
+  }
+
+}
+
+
+
+.over-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.788);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
+  color: white;
+
+  &.show {
+    opacity: 1;
+    pointer-events: auto;
+
+    li{
+      opacity: 1;
+      transform: none;
+    }
+  }
+  #close {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 3.2rem;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-top: 24px;
+      font-size: 3rem;
+      font-family: $FfArial;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.5s, transform 0.5s;
+    }
+  }
+  
+}
+
+.pc-menu {
+  display: none;
+}
+
+/* フッター */
+footer {
+  background-color: gray;
+  color: white;
+  width: auto;
+  height: 40px;
+  text-align: center;
+
+  #copylight {
+    padding-top: 8px;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  #home {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+  }
+
+  .pc-menu {
+    display: block;
+
+    ul {
+      display: flex;
+      margin: 15px;
+    }
+
+    li {
+      list-style: none;
+      padding-right: 90px;
+      font-size: 1.3rem;
+    }
+  }
+
+  .phone-menu {
+    display: none;
+  }
+
+  .over-content {
+    display: none;
+  }
+
+}

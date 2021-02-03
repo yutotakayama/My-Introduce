@@ -53,8 +53,8 @@
 .pace .pace-progress:after {
   content: attr(data-progress-text);
   display: block;
-  font-weight: 100;
-  font-size: 2em;
+  font-family: 'Monotype Corsiva', sans-serif;
+  font-size: 5em;
 }
 
 .pace.pace-inactive {

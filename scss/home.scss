@@ -1,3 +1,4 @@
+@import "menu_footer";
 $FfArial: 'arial', sans-serif;
 
 html {
@@ -9,98 +10,99 @@ html {
   padding: 0px;
 }
 
+body {
+  background-color: white;
+}
+
 #wrapper {
   width: 100%;
   overflow: hidden;
 }
 
-header {
-  color: rgb(255, 255, 255);
-  background: black;
-  display: flex;
-  padding: 0 16px;
+// header {
+//   color: rgb(255, 255, 255);
+//   background: black;
+//   display: flex;
+//   padding: 0 16px;
 
-  .home {
-    font-size: 3.8rem;
-    margin: 0 auto;
-  }
-}
-
-
-
-.phone-menu {
-  position: absolute;
-  top: -5px;
-  right: 16px;
-
-  #open {
-    font-size: 3.2rem;
-    line-height: 64px;
-    cursor: pointer;
-
-    &.hide {
-      display: none;
-    }
-  }
-
-}
+//   .home {
+//     font-size: 3.8rem;
+//     margin: 0 auto;
+//   }
+// }
 
 
 
-.over-content {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(255, 255, 255, 0.76);
-  text-align: center;
-  padding: 64px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s;
+// .phone-menu {
+//   position: absolute;
+//   top: -5px;
+//   right: 16px;
 
-  &.show {
-    opacity: 1;
-    pointer-events: auto;
+//   #open {
+//     font-size: 3.2rem;
+//     line-height: 64px;
+//     cursor: pointer;
 
-    li{
-      opacity: 1;
-      transform: none;
-    }
-  }
-  #close {
-    position: absolute;
-    top: 10px;
-    right: 16px;
-    font-size: 3.2rem;
-    cursor: pointer;
-  }
+//     &.hide {
+//       display: none;
+//     }
+//   }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+// }
 
-    li {
-      margin-top: 24px;
-      font-size: 3rem;
-      font-family: $FfArial;
-      opacity: 0;
-      transform: translateY(16px);
-      transition: opacity 0.5s, transform 0.5s;
+
+
+// .over-content {
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
+//   background: rgba(0, 0, 0, 0.788);
+//   text-align: center;
+//   padding: 64px;
+//   opacity: 0;
+//   pointer-events: none;
+//   transition: opacity 0.5s;
+//   color: white;
+
+//   &.show {
+//     opacity: 1;
+//     pointer-events: auto;
+
+//     li{
+//       opacity: 1;
+//       transform: none;
+//     }
+//   }
+//   #close {
+//     position: absolute;
+//     top: 10px;
+//     right: 16px;
+//     font-size: 3.2rem;
+//     cursor: pointer;
+//   }
+
+//   ul {
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+
+//     li {
+//       margin-top: 24px;
+//       font-size: 3rem;
+//       font-family: $FfArial;
+//       opacity: 0;
+//       transform: translateY(16px);
+//       transition: opacity 0.5s, transform 0.5s;
+//     }
+//   }
   
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-  }
-  
-}
+// }
 
-.pc-menu {
-  display: none;
-}
+// .pc-menu {
+//   display: none;
+// }
 
 a {
   color: inherit;
@@ -113,39 +115,31 @@ a {
 }
 
 /* メイン */
-.slide {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-color: black;
-  border: 1px solid rgb(122, 122, 122);
-
-  img {
-    position: absolute;
-    opacity: 0;
-    transition: all 1s ease-in-out;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
 #about {
   color: black;
-  width: 100%;
+  width: 90%;
   height: auto;
+  margin: 50px auto 100px auto;
   text-align: center;
+  background-color: rgb(240, 238, 238);
   padding-top: 100px;
+  transition: 0.5s;
+
+  &:hover {
+    transform: translate(-5px, -5px);
+    transition: all 0.5s;
+    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+  }
 
   h1 {
     font-size: 3rem;
-    font-family: $FFarial;
+    font-family: $FfArial;
     margin: 10% auto;
   }
 
   p {
     font-size: 1.5rem;
-    font-family: $FFarial;
+    font-family: $FfArial;
     padding-top: 50px;
     padding-bottom: 100px;
   }
@@ -159,20 +153,28 @@ a {
 #works {
   background-color: black;
   color: white;
-  width: 100%;
+  width: 90%;
   height: auto;
+  margin: 100px auto;
   text-align: center;
   padding-top: 100px;
+  transition: 0.5s;
+
+  &:hover {
+    transform: translate(-5px, -5px);
+    transition: all 0.5s;
+    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+  }
 
   h1 {
     font-size: 3rem;
-    font-family: $FFarial;
+    font-family: $FfArial;
     margin: 10% auto;
   }
 
   p {
     font-size: 1.5rem;
-    font-family: $FFarial;
+    font-family: $FfArial;
     padding-top: 50px;
     padding-bottom: 100px;
   }
@@ -186,14 +188,22 @@ a {
 address {
   background-color: rgb(202, 182, 182);
   color:rgb(0, 0, 0);
-  width: 100%;
+  width: 90%;
   height: auto;
+  margin: 100px auto;
   text-align: center;
   padding-top: 100px;
+  transition: 0.5s;
+
+  &:hover {
+    transform: translate(-5px, -5px);
+    transition: all 0.5s;
+    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+  }
 
   h1 {
     font-size: 3rem;
-    font-family: $FFarial;
+    font-family: $FfArial;
     margin: 10% auto;
     position: relative;
 
@@ -214,7 +224,7 @@ address {
 
   p {
     font-size: 1.5rem;
-    font-family: $FFarial;
+    font-family: $FfArial;
     padding-top: 50px;
     padding-bottom: 100px;
   }
@@ -224,57 +234,11 @@ address {
   }
 }
 
-/* フッター */
-footer {
-  background-color: gray;
-  color: white;
-  width: auto;
-  height: 40px;
-  text-align: center;
-
-  #copylight {
-    padding-top: 8px;
-  }
-}
-
-
-
-@media screen and (min-width: 560px) {
-  #home {
-    position: absolute;
-    top: 10px;
-    left: 16px;
-  }
-
-  .pc-menu {
-    display: block;
-
-    ul {
-      display: flex;
-      margin: 15px;
-    }
-
-    li {
-      list-style: none;
-      padding-right: 90px;
-      font-size: 1.3rem;
-    }
-  }
-
-  .phone-menu {
-    display: none;
-  }
-
-  .over-content {
-    display: none;
-  }
-
-}
-
 @media screen and (min-width: 960px) {
   #about {
     display: flex;
     justify-content: space-around;
+    padding: 200px 0px;
   
       #identity {
         display: block;
@@ -287,6 +251,7 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    padding: 200px 0px;
   
       #product {
         display: block;
@@ -297,6 +262,7 @@ footer {
   address {
     display: flex;
     justify-content: space-around;
+    padding: 200px 0px;
 
       #mail {
         display: block;
