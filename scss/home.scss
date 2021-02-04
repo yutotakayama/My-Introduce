@@ -1,5 +1,7 @@
 @import "menu_footer";
 $FfArial: 'arial', sans-serif;
+$cBlue: blue;
+$Shadow: rgba(0, 0, 0, 0.938);
 
 html {
   font-size: 62.5%;
@@ -18,91 +20,6 @@ body {
   width: 100%;
   overflow: hidden;
 }
-
-// header {
-//   color: rgb(255, 255, 255);
-//   background: black;
-//   display: flex;
-//   padding: 0 16px;
-
-//   .home {
-//     font-size: 3.8rem;
-//     margin: 0 auto;
-//   }
-// }
-
-
-
-// .phone-menu {
-//   position: absolute;
-//   top: -5px;
-//   right: 16px;
-
-//   #open {
-//     font-size: 3.2rem;
-//     line-height: 64px;
-//     cursor: pointer;
-
-//     &.hide {
-//       display: none;
-//     }
-//   }
-
-// }
-
-
-
-// .over-content {
-//   position: fixed;
-//   top: 0;
-//   bottom: 0;
-//   right: 0;
-//   left: 0;
-//   background: rgba(0, 0, 0, 0.788);
-//   text-align: center;
-//   padding: 64px;
-//   opacity: 0;
-//   pointer-events: none;
-//   transition: opacity 0.5s;
-//   color: white;
-
-//   &.show {
-//     opacity: 1;
-//     pointer-events: auto;
-
-//     li{
-//       opacity: 1;
-//       transform: none;
-//     }
-//   }
-//   #close {
-//     position: absolute;
-//     top: 10px;
-//     right: 16px;
-//     font-size: 3.2rem;
-//     cursor: pointer;
-//   }
-
-//   ul {
-//     list-style-type: none;
-//     margin: 0;
-//     padding: 0;
-
-//     li {
-//       margin-top: 24px;
-//       font-size: 3rem;
-//       font-family: $FfArial;
-//       opacity: 0;
-//       transform: translateY(16px);
-//       transition: opacity 0.5s, transform 0.5s;
-//     }
-//   }
-  
-// }
-
-// .pc-menu {
-//   display: none;
-// }
 
 a {
   color: inherit;
@@ -128,7 +45,7 @@ a {
   &:hover {
     transform: translate(-5px, -5px);
     transition: all 0.5s;
-    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+    box-shadow: 0 8px 40px -10px $Shadow;
   }
 
   h1 {
@@ -141,7 +58,43 @@ a {
     font-size: 1.5rem;
     font-family: $FfArial;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+  }
+
+  .btn {
+    padding: 5px 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    z-index: 1;
+
+    &.slide-bg {
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        color: black;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+        z-index: -1;
+      }
+      &:hover {
+        color: white;
+  
+       &::before {
+        transform: none;
+       }
+      }
+
+    }
   }
 
   #identity {
@@ -163,7 +116,7 @@ a {
   &:hover {
     transform: translate(-5px, -5px);
     transition: all 0.5s;
-    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+    box-shadow: 0 8px 40px -10px $Shadow;
   }
 
   h1 {
@@ -176,7 +129,44 @@ a {
     font-size: 1.5rem;
     font-family: $FfArial;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+  }
+
+  .btn {
+    padding: 5px 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    z-index: 1;
+
+    &.slide-bg {
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+        z-index: -1;
+      }
+      &:hover {
+        color: black;
+  
+       &::before {
+        transform: none;
+       }
+      }
+
+    }
   }
 
   #product {
@@ -198,7 +188,7 @@ address {
   &:hover {
     transform: translate(-5px, -5px);
     transition: all 0.5s;
-    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+    box-shadow: 0 8px 40px -10px $Shadow;
   }
 
   h1 {
@@ -226,7 +216,42 @@ address {
     font-size: 1.5rem;
     font-family: $FfArial;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+  }
+
+  .btn {
+    padding: 5px 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    z-index: 1;
+
+    &.slide-bg {
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(82, 52, 43, 0.582);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+        z-index: -1;
+      }
+      &:hover {
+        color: black;
+  
+       &::before {
+        transform: none;
+       }
+      }
+
+    }
   }
 
   #mail {

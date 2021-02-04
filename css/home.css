@@ -176,8 +176,8 @@ a:hover {
           transform: translate(-5px, -5px);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
-          box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+  -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.938);
+          box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.938);
 }
 
 #about h1 {
@@ -190,7 +190,48 @@ a:hover {
   font-size: 1.5rem;
   font-family: "arial", sans-serif;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+}
+
+#about .btn {
+  padding: 5px 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+#about .btn.slide-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+#about .btn.slide-bg::before {
+  content: '';
+  color: black;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  z-index: -1;
+}
+
+#about .btn.slide-bg:hover {
+  color: white;
+}
+
+#about .btn.slide-bg:hover::before {
+  -webkit-transform: none;
+          transform: none;
 }
 
 #about #identity {
@@ -214,8 +255,8 @@ a:hover {
           transform: translate(-5px, -5px);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
-          box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+  -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.938);
+          box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.938);
 }
 
 #works h1 {
@@ -228,7 +269,49 @@ a:hover {
   font-size: 1.5rem;
   font-family: "arial", sans-serif;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+}
+
+#works .btn {
+  padding: 5px 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  z-index: 1;
+}
+
+#works .btn.slide-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+#works .btn.slide-bg::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  z-index: -1;
+}
+
+#works .btn.slide-bg:hover {
+  color: black;
+}
+
+#works .btn.slide-bg:hover::before {
+  -webkit-transform: none;
+          transform: none;
 }
 
 #works #product {
@@ -252,8 +335,8 @@ address:hover {
           transform: translate(-5px, -5px);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
-          box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.555);
+  -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.938);
+          box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.938);
 }
 
 address h1 {
@@ -281,7 +364,47 @@ address p {
   font-size: 1.5rem;
   font-family: "arial", sans-serif;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+}
+
+address .btn {
+  padding: 5px 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+address .btn.slide-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+address .btn.slide-bg::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(82, 52, 43, 0.582);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  z-index: -1;
+}
+
+address .btn.slide-bg:hover {
+  color: black;
+}
+
+address .btn.slide-bg:hover::before {
+  -webkit-transform: none;
+          transform: none;
 }
 
 address #mail {
