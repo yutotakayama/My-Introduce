@@ -46,16 +46,18 @@ header {
   pointer-events: none;
   transition: opacity 0.5s;
   color: white;
-
+  
   &.show {
     opacity: 1;
     pointer-events: auto;
+    z-index: 2;
 
     li{
       opacity: 1;
       transform: none;
     }
   }
+
   #close {
     position: absolute;
     top: 10px;
